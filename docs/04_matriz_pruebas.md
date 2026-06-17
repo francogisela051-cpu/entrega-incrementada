@@ -1,0 +1,23 @@
+# Matriz de pruebas
+
+Completa la columna Resultado y Evidencia.
+
+| ID  | Escenario           | Datos de entrada               | Resultado esperado                      | Resultado obtenido                                                                    | Estado  | Evidencia                         |
+| --- | ------------------- | ------------------------------ | --------------------------------------- | ------------------------------------------------------------------------------------- | ------- | --------------------------------- |
+| P01 | Cargar pagina       | Abrir index.html               | Sitio carga sin errores visibles        | El sitio cargó la interfaz correctamente respetando los estilos estructurados.        | Exitoso | `evidencia_01_error.png`          |
+| P02 | Consola inicial     | Abrir consola                  | No hay errores despues de corregir      | Tras validar los selectores y condicionales, la consola quedó completamente limpia.   | Exitoso | `evidencia_02_correccion.png`     |
+| P03 | Formulario vacio    | Clic en guardar                | Muestra errores y no guarda             | Bloqueó el envío por medio de preventDefault y mostró los mensajes de alerta.         | Exitoso | `evidencia_03_invalido.png`       |
+| P04 | Nombre corto        | Nombre: Lu                     | Rechaza por nombre menor a 3 caracteres | Interceptó el registro indicando que requiere un mínimo de 3 caracteres.              | Exitoso | `evidencia_03_invalido.png`       |
+| P05 | Edad menor          | Edad: 10                       | Rechaza por edad menor a 12             | Validó la edad de forma estricta rechazando el valor por ser menor a 12 años.         | Exitoso | `evidencia_03_invalido.png`       |
+| P06 | Telefono corto      | 300123456                      | Rechaza por longitud incorrecta         | Detectó que el campo tenía menos de 10 dígitos y arrojó el mensaje esperado.          | Exitoso | `evidencia_03_invalido.png`       |
+| P07 | Telefono con letras | 30012abc67                     | Rechaza por caracteres no numericos     | La expresión regular evaluó el formato y rechazó el registro por contener texto.      | Exitoso | `evidencia_03_invalido.png`       |
+| P08 | Correo invalido     | laura_correo                   | Rechaza por formato de correo           | Identificó la ausencia de caracteres obligatorios (@ y .) bloqueando el envío.        | Exitoso | `evidencia_03_invalido.png`       |
+| P09 | Sin taller          | Taller vacio                   | Rechaza por no seleccionar taller       | Detuvo el flujo exigiendo la selección obligatoria de uno de los talleres del menú.   | Exitoso | `evidencia_03_invalido.png`       |
+| P10 | Sin confirmacion    | Acepta: no marcado             | Rechaza por falta de confirmacion       | Evaluó el estado del checkbox de términos arrojando error al no estar seleccionado.   | Exitoso | `evidencia_03_invalido.png`       |
+| P11 | Registro valido     | Datos completos correctos      | Guarda y muestra en tabla               | Almacenó el registro, limpió los inputs y renderizó los datos en la tabla inferior.   | Exitoso | `evidencia_04_valido.png`         |
+| P12 | Resumen             | Dos o mas registros            | Actualiza indicadores superiores        | Modificó correctamente los contadores de inscritos y válidos en la interfaz.          | Exitoso | `evidencia_04_valido.png`         |
+| P13 | Taller popular      | Dos registros del mismo taller | Muestra taller con mayor demanda        | El algoritmo de conteo identificó el taller más solicitado y actualizó el banner.     | Exitoso | `evidencia_04_valido.png`         |
+| P14 | Limpiar             | Clic en limpiar                | Limpia formulario sin borrar tabla      | Reestableció todos los inputs a su estado por defecto manteniendo las filas intactas. | Exitoso | `evidencia_04_valido.png`         |
+| P15 | Borrar todo         | Clic en borrar registros       | Elimina registros y actualiza resumen   | Vació el arreglo en localStorage, limpió la tabla y devolvió los contadores a cero.   | Exitoso | `evidencia_06_consola_limpia.png` |
+| P16 | Pruebas automaticas | Abrir tests.html               | Pruebas en verde                        | La suite corrió todas las pruebas automatizadas de forma exitosa marcando los OK.     | Exitoso | `evidencia_05_pruebas.png`        |
+| P17 | Vista movil         | Reducir ancho o usar celular   | Interfaz legible y usable               | Los elementos se reajustaron de forma fluida adaptando el formulario a la pantalla.   | Exitoso | `evidencia_04_valido.png`         |
