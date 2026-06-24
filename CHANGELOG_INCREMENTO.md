@@ -6,9 +6,7 @@ Completa este archivo antes de entregar.
 Formulario de Inscripcion Modular con Validaciones y Resumen Dinamico
 
 ## Integrantes
-- Everaldy Ayala Usuga
-- Alejandra Valencia
-- Alejandro Velazquez
+-GISELA FRANCO
 
 ## Version entregada
 v1.0-semana11

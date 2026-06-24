@@ -15,3 +15,4 @@ Evidencias sugeridas:
 9. `09_vista_movil.png`
 
 Puedes usar otros nombres, pero deben ser claros.
+![alt text](<GISELA (2)-1.png>)
