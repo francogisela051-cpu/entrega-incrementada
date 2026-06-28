@@ -16,3 +16,5 @@ Evidencias sugeridas:
 
 Puedes usar otros nombres, pero deben ser claros.
 ![alt text](<GISELA (2)-1.png>)
+![alt text](<consola sin error-1.png>)
+![alt text](<formmulario inscripcion.png>)
